@@ -3,6 +3,11 @@
 this boilerplate includes [electron](https://electronjs.org/), [vue](https://vuejs.org/), [vuetify](https://vuetifyjs.com), [typescript](https://www.typescriptlang.org/), [scss](https://sass-lang.com/guide), [webpack](https://webpack.js.org/), [tslint](https://palantir.github.io/tslint/), [prettier](https://prettier.io/), [electron-builder](https://www.electron.build/) development environment.
 
 ### Some Guide
+Get started with cloning
+```bash
+$ git clone https://github.com/claudianus/electron-vue-vuetify-typescript-scss-boilerplate.git
+$ cd electron-vue-vuetify-typescript-scss-boilerplate
+```
 
 Install dependencies
 
