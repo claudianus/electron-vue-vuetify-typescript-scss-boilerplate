@@ -1,0 +1,90 @@
+{
+  "name": "electron-vue-vuetify-typescript-scss-boilerplate",
+  "version": "1.0.0",
+  "description": "a boilerplate for electron development environment",
+  "main": "./build/main.js",
+  "author": {
+    "name": "Claudianus Mamertus",
+    "email": "claudianus@engineer.com",
+    "url": "https://github.com/claudianus"
+  },
+  "homepage": "https://github.com/claudianus",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack & electron .",
+    "build": "webpack",
+    "pack": "webpack & electron-builder --dir",
+    "dist": "webpack & electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jsonfile": "^5.0.0",
+    "@types/node": "^10.12.18",
+    "css-loader": "^2.1.0",
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.5",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "material-design-icons-iconfont": "^4.0.4",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.15.3",
+    "prettier-webpack-plugin": "^1.2.0",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-webpack-plugin": "^2.0.2",
+    "typescript": "^3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "vue": "^2.5.22",
+    "vue-loader": "^15.5.1",
+    "vue-template-compiler": "^2.5.22",
+    "vuetify": "^1.4.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-visualizer-plugin": "^0.1.11"
+  },
+  "build": {
+    "productName": "my-electron-app",
+    "appId": "my.electron.app",
+    "asar": true,
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "./resources/icon.icns"
+    },
+    "dmg": {
+      "title": "my-electron-app",
+      "icon": "./resources/icon.icns"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "./resources/icon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "./resources/icon.icns"
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": false
+    },
+    "directories": {
+      "buildResources": "./resources/",
+      "output": "./dist/",
+      "app": "."
+    },
+    "files": [
+      "./build",
+      "!node_modules"
+    ]
+  }
+}
