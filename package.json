@@ -42,8 +42,7 @@
     "vue-template-compiler": "^2.5.22",
     "vuetify": "^1.4.2",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
-    "webpack-visualizer-plugin": "^0.1.11"
+    "webpack-cli": "^3.2.1"
   },
   "build": {
     "productName": "my-electron-app",
